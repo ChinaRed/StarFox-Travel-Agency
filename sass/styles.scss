@@ -1,0 +1,49 @@
+@import "partials/settings";
+@import "partials/foundation";
+
+html{
+  background-color: $white;
+}
+body {
+  background: $white;
+}
+
+.header{
+  background-color: $light_blue;
+  height: 100px;
+}
+
+.title{
+  background-color: salmon;
+}
+
+.header_nav{
+  background-color: orange;
+  
+  li{
+    display: inline;
+  }
+}
+
+.main_copy{
+  background-color: green;
+}
+
+.main_aside{
+  background-color: purple;
+}
+
+.main_link_content{
+  background-color: pink;
+}
+
+.link_container{
+  border: solid 3px salmon;
+}
+
+.footer {
+  background-color: orange;
+}
+// h1{
+//   color: $white;
+// }
