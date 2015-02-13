@@ -103,7 +103,7 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to define default font weights
 // $font-weight-normal: normal;
-// $font-weight-bold: bold;
+// $font-weight-bold: bolder;
 
 // $white       : #FFFFFF;
 // $ghost       : #FAFAFA;
@@ -216,7 +216,7 @@ $include-html-global-classes: $include-html-classes;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-// $h1-font-size: rem-calc(44);
+$h1-font-size: rem-calc(25);
 // $h2-font-size: rem-calc(37);
 // $h3-font-size: rem-calc(27);
 // $h4-font-size: rem-calc(23);
@@ -1389,7 +1389,7 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
+// $topbar-bg-colorg$oil;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
