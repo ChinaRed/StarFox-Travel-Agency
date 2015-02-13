@@ -57,7 +57,7 @@ body {
   color: #222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
@@ -1338,7 +1338,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -1744,7 +1744,7 @@ select {
   border-color: #cccccc;
   padding: 0.5rem;
   font-size: 0.875rem;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   color: rgba(0, 0, 0, 0.75);
   line-height: normal;
   border-radius: 0;
@@ -1994,7 +1994,7 @@ meta.foundation-mq-topbar {
       color: #FFFFFF;
       padding: 12px 0 12px 0;
       padding-left: 0.9375rem;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 0.8125rem;
       font-weight: normal;
       text-transform: none; }
@@ -2482,7 +2482,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -3009,8 +3009,7 @@ html {
   background-color: #FFFFFF; }
 
 body {
-  background: #FFFFFF;
-  font-family: 'Open Sans', sans-serif; }
+  background: #FFFFFF; }
 
 h1, h2, h3, h4, a, p {
   color: #333333;
@@ -3021,6 +3020,7 @@ header {
   background-image: url('/images/header_bg.png');
   height: 241px; }
   header .title {
+    margin-top: 10px;
     border: solid 5px green; }
     header .title h1 {
       border: solid 5px yellow;
@@ -3049,13 +3049,10 @@ header {
     font-weight: 300;
     padding: 0 20px; }
 
-.main_content {
-  border: solid 10px orange;
-  padding-top: 68px; }
-
 .main_copy {
-  background-color: #9ECBCC; }
+  float: left; }
   .main_copy h2 {
+    padding: 20px;
     font-size: 2em;
     font-weight: 300;
     margin: 40px; }
@@ -3063,11 +3060,16 @@ header {
     font-weight: 600; }
 
 .main_content_wrapper {
-  border: solid 3px blue; }
+  border: solid 3px blue;
+  margin-top: 32px;
+  background-color: #9ECBCC;
+  border-radius: 15px; }
 
 .main_aside {
   background-color: #9ECBCC;
-  border: solid 3px blue; }
+  border: solid 3px blue;
+  border-radius: 15px;
+  float: left; }
 
 .main_aside_button {
   background-image: url('/images/ship.svg');
@@ -3078,11 +3080,39 @@ header {
   .main_aside_button a {
     padding: 100px 40px; }
 
-.main_link_content {
-  background-color: pink; }
+.links .row {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+.links h3, .links h4, .links a, .links p {
+  color: #FFFFFF;
+  font-weight: 300; }
+.links h4 {
+  border-bottom: solid 10px #FFFFFF;
+  padding: 0 20px; }
+.links .link_container {
+  background-color: #333333;
+  border-radius: 15px;
+  padding: 20px 0; }
+  .links .link_container:last-child h3 {
+    color: #9ECBCC; }
+.links .link_heading {
+  font-size: 1.5em;
+  font-weight: 600;
+  border-bottom: solid 1px #666666; }
+.links .cost {
+  padding: 0 25px; }
+  .links .cost h4 {
+    font-size: 4em;
+    font-weight: 300; }
+.links .description {
+  font-size: 1em;
+  font-weight: 300; }
 
-.link_container {
-  border: solid 3px salmon; }
-
-.footer {
-  background-color: orange; }
+footer {
+  background-color: #333333; }
+  footer p {
+    background-color: #333333;
+    color: #666666;
+    font-size: 0.8em;
+    height: 120px;
+    padding-top: 30px; }
