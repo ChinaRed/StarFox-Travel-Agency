@@ -7,8 +7,15 @@ html{
 }
 body {
   background: $white;
+  min-width: 560px;
 
-  @media #{$small-only}{
+  // @media #{$small-only}{
+  //   background-color: $light_blue;
+  // }
+}
+
+section div.row{
+  @media #{$small-only} {
     background-color: $light_blue;
   }
 }
@@ -20,6 +27,12 @@ h1, h2, h3, h4, a, p{
 
 header{
 
+  .columns{
+    @media #{$small-only} {
+      padding: 0;
+    }
+  }
+
   nav.top-bar{
 
     .title-area{
@@ -30,15 +43,20 @@ header{
         background-repeat: no-repeat;
         background-size: 60px;
         background-color: brown;
-        height: 60px;
-        width: 60px;
+        text-align: left;
 
-          a span{
+          a {
+            font-size: 1.5em;
             color: $light_blue;
-            font-size: 1em;
-            font-weight: 600;
-            padding: 0 60px;
-          }
+            font-weight: 300;
+
+            span{
+              color: $light_blue;
+              font-size: 1em;
+              font-weight: 600;
+              padding-left: 60px;
+            }
+          }    
       }
 
       li.toggle-topbar a{
@@ -53,18 +71,22 @@ header{
       }
     }
   }
-
-  
-
-  
+ 
   .top-bar-section{
     color: $light_blue;
+    
   
     ul{
       font-size: 1.5em;
       font-weight: 300;
       letter-spacing: 1px;
-      padding: 20px;
+      // padding: 0 40px;
+      background-color: $dark_grey;
+
+      li{
+        padding: 14px 40px;
+        border-top: solid 1px $light_blue;
+      }
     }
 
   }
@@ -73,6 +95,7 @@ header{
   background-color: $light_blue;
   background-image: url('/images/header_bg.png');  
   height: 241px;
+
 
     @media #{$small-only} {
       display: none;
@@ -130,14 +153,30 @@ header{
 }
 
 .main_copy{
-  float: left;
   border: solid 2px purple;
 
+  @media #{$small-only} {
+    background-image: url('/images/ship.svg');
+    background-position: center -63px;
+    background-repeat: no-repeat;
+    background-size: 300px;
+    height: auto;
+    width: 100%;
+    margin-top: -25px;
+    padding: 200px 0 40px;
+    display: block;
+  }
+
   h2{
-    padding: 20px;
     font-size: 2em;
     font-weight: 300;
+    padding: 20px;
     margin: 40px;
+
+    @media #{$small-only} {
+      padding: 0;
+      margin: 0;
+    }
   }
 
   span{
@@ -149,15 +188,16 @@ header{
   border: solid 3px blue;
   margin-top: 70px;
   background-color: $light_blue;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 .main_aside{
   border-radius: 15px;
-  float: right;
+  // float: right;
+
   text-align: center;
 
-  .main_aside_image{
+  div.main_aside_image{
     background-image: url('/images/ship.svg');
     background-position: center -63px;
     background-repeat: no-repeat;
@@ -165,18 +205,26 @@ header{
     height: 200px;
     width: 300px;
     margin-top: -25px;
+    display: none;
 
-    @media #{$small-only} {
-      display: none;
+    @media #{$large-only} {
+      display: initial;
     }
-  }
+}
+  //   @media #{$small-only} {
+  //     background-position: 50px 50px;
+  //     // display: none;
+  //   }
+  // }
   
   .main_aside_button{
     border-bottom: solid 7px $dark_grey;
     background-color: $light_grey;
     height: 65px;
     padding: 20px;
-    margin: 0 20px 0 3px;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 60px;
 
     a{
       color: $white;
@@ -190,6 +238,10 @@ header{
 
 .links {
   
+    // @media #{$small-only} {
+    //   margin: 50px;
+    // }
+
   .row{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -212,9 +264,13 @@ header{
     border-radius: 7px;
     padding: 33px 0;
 
+    @media #{$small-only} {
+      margin: 30px 45px;
+    } 
+
     &:last-child h3{
       color: $white;
-      
+    
     }
 
  }
@@ -238,36 +294,28 @@ header{
 
   .cost{
 
-
       @media #{$small-only} {
-        padding: 30px 40px;
-      }
-
-      @media #{$medium-only} {
-        float: left;
+        padding: 30px 83px;
       }
 
     h4{
       font-size: 4.4em;
       font-weight: 300;
       border-bottom: solid 10px $white;
-
-        // margin: 0 67px;
-      
+      width: 100%;
+      margin: auto;
     }
 
   }
-    // background-color: lavender;
-
 
   .description{
-    // background-color: salmon;
     font-size: 1em;
     font-weight: 300;
+    width: 58%;
+    margin: auto;
 
       p{
         letter-spacing: 0.8px;
-        // margin: 0 140px;
       }
   }
 
@@ -275,6 +323,10 @@ header{
     @media #{$small-only} {
       display: none;
     }
+  }
+
+  .link_burger_3{
+    background-color: red;
   }
 }
 
@@ -284,9 +336,11 @@ footer{
   p{
   background-color: $dark_grey;
   color: $light_grey;
-  font-size: 0.8em;
+  font-size: 0.9em;
   height: 120px;
   padding-top: 30px;
+  width: 58%;
+  margin: auto;
   }
 }
 

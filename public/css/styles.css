@@ -3009,27 +3009,35 @@ html {
   background-color: #FFFFFF; }
 
 body {
-  background: #FFFFFF; }
-  @media only screen and (max-width: 40em) {
-    body {
-      background-color: #9ECBCC; } }
+  background: #FFFFFF;
+  min-width: 560px; }
+
+@media only screen and (max-width: 40em) {
+  section div.row {
+    background-color: #9ECBCC; } }
 
 h1, h2, h3, h4, a, p {
   color: #333333;
   text-align: center; }
 
+@media only screen and (max-width: 40em) {
+  header .columns {
+    padding: 0; } }
 header nav.top-bar .title-area h1.mobile_logo {
   background-image: url('/images/logo.svg');
   background-repeat: no-repeat;
   background-size: 60px;
   background-color: brown;
-  height: 60px;
-  width: 60px; }
-  header nav.top-bar .title-area h1.mobile_logo a span {
+  text-align: left; }
+  header nav.top-bar .title-area h1.mobile_logo a {
+    font-size: 1.5em;
     color: #9ECBCC;
-    font-size: 1em;
-    font-weight: 600;
-    padding: 0 60px; }
+    font-weight: 300; }
+    header nav.top-bar .title-area h1.mobile_logo a span {
+      color: #9ECBCC;
+      font-size: 1em;
+      font-weight: 600;
+      padding-left: 60px; }
 header nav.top-bar .title-area li.toggle-topbar a {
   background-image: url('/images/menu_icon.png');
   background-size: 40px;
@@ -3044,7 +3052,10 @@ header .top-bar-section {
     font-size: 1.5em;
     font-weight: 300;
     letter-spacing: 1px;
-    padding: 20px; }
+    background-color: #333333; }
+    header .top-bar-section ul li {
+      padding: 14px 40px;
+      border-top: solid 1px #9ECBCC; }
 header div.bar {
   background-color: #9ECBCC;
   background-image: url('/images/header_bg.png');
@@ -3061,13 +3072,27 @@ header h1.desktop_logo {
   letter-spacing: 1px; }
 
 .main_copy {
-  float: left;
   border: solid 2px purple; }
+  @media only screen and (max-width: 40em) {
+    .main_copy {
+      background-image: url('/images/ship.svg');
+      background-position: center -63px;
+      background-repeat: no-repeat;
+      background-size: 300px;
+      height: auto;
+      width: 100%;
+      margin-top: -25px;
+      padding: 200px 0 40px;
+      display: block; } }
   .main_copy h2 {
-    padding: 20px;
     font-size: 2em;
     font-weight: 300;
+    padding: 20px;
     margin: 40px; }
+    @media only screen and (max-width: 40em) {
+      .main_copy h2 {
+        padding: 0;
+        margin: 0; } }
   .main_copy span {
     font-weight: 600; }
 
@@ -3075,29 +3100,31 @@ header h1.desktop_logo {
   border: solid 3px blue;
   margin-top: 70px;
   background-color: #9ECBCC;
-  border-radius: 15px; }
+  border-radius: 8px; }
 
 .main_aside {
   border-radius: 15px;
-  float: right;
   text-align: center; }
-  .main_aside .main_aside_image {
+  .main_aside div.main_aside_image {
     background-image: url('/images/ship.svg');
     background-position: center -63px;
     background-repeat: no-repeat;
     background-size: 300px;
     height: 200px;
     width: 300px;
-    margin-top: -25px; }
-    @media only screen and (max-width: 40em) {
-      .main_aside .main_aside_image {
-        display: none; } }
+    margin-top: -25px;
+    display: none; }
+    @media only screen and (min-width:64.063em) and (max-width:90em) {
+      .main_aside div.main_aside_image {
+        display: initial; } }
   .main_aside .main_aside_button {
     border-bottom: solid 7px #333333;
     background-color: #666666;
     height: 65px;
     padding: 20px;
-    margin: 0 20px 0 3px; }
+    width: 75%;
+    margin: auto;
+    margin-bottom: 60px; }
     .main_aside .main_aside_button a {
       color: #FFFFFF;
       font-size: 1.2em;
@@ -3113,6 +3140,9 @@ header h1.desktop_logo {
   background-color: #666666;
   border-radius: 7px;
   padding: 33px 0; }
+  @media only screen and (max-width: 40em) {
+    .links .link_container {
+      margin: 30px 45px; } }
   .links .link_container:last-child h3 {
     color: #FFFFFF; }
 .links .link_heading {
@@ -3128,28 +3158,33 @@ header h1.desktop_logo {
       float: right; } }
 @media only screen and (max-width: 40em) {
   .links .cost {
-    padding: 30px 40px; } }
-@media only screen and (min-width:40.063em) and (max-width:64em) {
-  .links .cost {
-    float: left; } }
+    padding: 30px 83px; } }
 .links .cost h4 {
   font-size: 4.4em;
   font-weight: 300;
-  border-bottom: solid 10px #FFFFFF; }
+  border-bottom: solid 10px #FFFFFF;
+  width: 100%;
+  margin: auto; }
 .links .description {
   font-size: 1em;
-  font-weight: 300; }
+  font-weight: 300;
+  width: 58%;
+  margin: auto; }
   .links .description p {
     letter-spacing: 0.8px; }
 @media only screen and (max-width: 40em) {
   .links .small_links {
     display: none; } }
+.links .link_burger_3 {
+  background-color: red; }
 
 footer {
   background-color: #333333; }
   footer p {
     background-color: #333333;
     color: #666666;
-    font-size: 0.8em;
+    font-size: 0.9em;
     height: 120px;
-    padding-top: 30px; }
+    padding-top: 30px;
+    width: 58%;
+    margin: auto; }
