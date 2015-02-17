@@ -69,7 +69,7 @@ header{
 
   }
 
-  .bar{
+  div.bar{
   background-color: $light_blue;
   background-image: url('/images/header_bg.png');  
   height: 241px;
@@ -81,13 +81,14 @@ header{
   
   h1.desktop_logo {
     border: solid 5px yellow;
-    padding-top: 120px;
+    // padding-top: 120px;
     background-image: url('/images/logo.svg');
     background-size: auto 165px;
     background-repeat: no-repeat;
     background-position: center -15px;
     letter-spacing: 1px;
-    padding-bottom: 15px;
+    // padding-bottom: 15px;
+
   }
 //   .title{
 //     margin-top: 10px;
@@ -224,11 +225,14 @@ header{
     
       h3{
         @media #{$small-only} {
-        font-weight: 600;
-        font-size: 1.5em;
-        letter-spacing: 1px;
+          font-weight: 600;
+          font-size: 1.5em;
+          letter-spacing: 1px;
         }
-
+        
+        @media #{$medium-only} {
+          float: right;
+        }
       }
   }
 
@@ -236,7 +240,11 @@ header{
 
 
       @media #{$small-only} {
-      padding: 30px 40px;
+        padding: 30px 40px;
+      }
+
+      @media #{$medium-only} {
+        float: left;
       }
 
     h4{

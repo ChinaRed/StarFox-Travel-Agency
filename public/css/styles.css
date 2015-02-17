@@ -3045,22 +3045,20 @@ header .top-bar-section {
     font-weight: 300;
     letter-spacing: 1px;
     padding: 20px; }
-header .bar {
+header div.bar {
   background-color: #9ECBCC;
   background-image: url('/images/header_bg.png');
   height: 241px; }
   @media only screen and (max-width: 40em) {
-    header .bar {
+    header div.bar {
       display: none; } }
 header h1.desktop_logo {
   border: solid 5px yellow;
-  padding-top: 120px;
   background-image: url('/images/logo.svg');
   background-size: auto 165px;
   background-repeat: no-repeat;
   background-position: center -15px;
-  letter-spacing: 1px;
-  padding-bottom: 15px; }
+  letter-spacing: 1px; }
 
 .main_copy {
   float: left;
@@ -3125,9 +3123,15 @@ header h1.desktop_logo {
       font-weight: 600;
       font-size: 1.5em;
       letter-spacing: 1px; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .links .link_heading h3 {
+      float: right; } }
 @media only screen and (max-width: 40em) {
   .links .cost {
     padding: 30px 40px; } }
+@media only screen and (min-width:40.063em) and (max-width:64em) {
+  .links .cost {
+    float: left; } }
 .links .cost h4 {
   font-size: 4.4em;
   font-weight: 300;
