@@ -7,7 +7,7 @@ html{
 }
 body {
   background: $white;
-  min-width: 560px;
+  // min-width: 560px;
 
   // @media #{$small-only}{
   //   background-color: $light_blue;
@@ -42,19 +42,20 @@ header{
         background-image: url('/images/logo.svg');
         background-repeat: no-repeat;
         background-size: 60px;
-        background-color: brown;
-        text-align: left;
+        margin-left: 30px;
+
 
           a {
             font-size: 1.5em;
             color: $light_blue;
             font-weight: 300;
+            text-align: initial;
 
             span{
               color: $light_blue;
               font-size: 1em;
               font-weight: 600;
-              padding-left: 60px;
+              padding-left: 50px;
             }
           }    
       }
@@ -63,11 +64,10 @@ header{
         background-image: url('/images/menu_icon.png');
         background-size: 40px;
         background-repeat: no-repeat;
-        background-color: brown;
         display: block;
         height: 40px;
         width: 40px;
-
+        margin: 12px 15px 0 0;
       }
     }
   }
@@ -231,8 +231,6 @@ header{
       font-size: 1.2em;
       font-weight: 300;
     }
-
-
   }
 }
 
@@ -245,6 +243,10 @@ header{
   .row{
     margin-top: 20px;
     margin-bottom: 20px;
+
+    @media #{$small-only} {
+      margin: 0;
+    }
   }
 
   h3, h4, a, p{
@@ -262,7 +264,6 @@ header{
   .link_container{
     background-color: $light_grey;
     border-radius: 7px;
-    padding: 33px 0;
 
     @media #{$small-only} {
       margin: 30px 45px;
@@ -278,6 +279,7 @@ header{
   .link_heading{
     border-bottom: solid 1px $grey;
     box-shadow: 0px 1px 1px #777777;
+    padding: 20px 0;
     
       h3{
         @media #{$small-only} {
@@ -313,6 +315,7 @@ header{
     font-weight: 300;
     width: 58%;
     margin: auto;
+    padding: 10px 0;
 
       p{
         letter-spacing: 0.8px;
@@ -325,8 +328,27 @@ header{
     }
   }
 
+  .columns:last-child{
+    background-color: $light_blue;
+  }
+
   .link_burger_3{
-    background-color: red;
+    text-align: center;
+    background-color: $light_blue;
+
+    a{
+      font-size: 1.5em;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+    }
+
+    img{
+      padding-left: 20px;
+    }
+
+    @media #{$small-only}{
+      margin: 0;
+    }
   }
 }
 
