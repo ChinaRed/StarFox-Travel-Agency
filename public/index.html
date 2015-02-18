@@ -10,18 +10,19 @@
     <header>
 
     <div class="row">
-          <div class="small-12 columns">
-        <h1 class="desktop_logo hide-for-small">
+      <div class="small-12 columns">
+        <h1 class="desktop_logo hide-for-small only">
         <div class="bar">
+          
           <a href="#">
             <span>StarFox</span> Intergalactic Travel Agency
           </a>
         </h1>
-        <nav class="top-bar" data-topbar role="navigation">
+        <nav class="top-bar show-for-small-only" data-topbar role="navigation">
           <ul class="title-area show-for-small">
             <li class="name">
               <h1 class="mobile_logo">
-                <a href="#">
+                <a href="logo">
                   <span>Star</span>Fox
                 </a>
               </h1>
@@ -38,52 +39,41 @@
             </ul>
           </section>
         </nav>  <!-- .nav -->
+
+        <nav class="desktop_nav hide-for-small-only">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Intersteller Travel</a></li>
+          </ul>
+        </nav>
           </div>
       </div> <!-- .small-12 columns -->
     </div> <!-- .row -->
   </header>
 
-
-  <!-- <header>
-    <div class="row">
-      <div class="large-12 columns">
-          <div class="title">
-            <h1><span>StarFox</span> Intergalactic Travel Agency</h1>
-          </div>
-        </div> end of title columns
-    </div> end of row
-
-    <nav>
-    <div class="row">
-      <div class="large-12 columns">
-        <ul class="nav_menu">
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Intersteller Travel</li>
-        </ul>
-      </div> end of nav columns
-    </div> end of header nav row
-    </nav> .nav row
-  </header>   </header> -->
-
   <section>
     <div class="row">
       <div class="large-12 columns">
         <div class="main_content_wrapper clearfix">
-          <div class="large-8 columns">
+          <!-- <div class="large-12 columns"> -->
+            <div class="ship_image"><img src="/images/ship.svg" alt=""></div>
             <div class="main_copy">
               <h2>We will take you to the <span>Moon and Back!</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam numquam reiciendis repellat impedit incidunt eius recusandae, similique dolorem!</h2>
             </div> <!-- .main_copy -->
-          </div> <!-- .large-8 columns -->
-          <div class="row">
-            <div class="large-4 medium-12 small-12 columns">
+            <div class="main_aside_button"><a href="#">Find Out More</a>
+          <!-- </div>  --><!-- .large-12 columns -->
+      <!--     <div class="row">
+            <div class="large-3 medium-12 small-12 columns">
               <div class="main_aside clearfix">
-                <div class="main_aside_image"></div>
-                <div class="main_aside_button"><a href="#">Find Out More</a></div>
-              </div> <!-- .main_aside -->
-            </div> <!-- .large-4 columns -->
-          </div> <!-- .row -->
+
+                <div class="main_aside_button"><a href="#">Find Out More</a>
+                <div class="main_ship_image"></div>
+                </div>
+              </div> .main_aside
+            </div> .large-4 columns
+          </div> .row -->
         </div> <!-- .main_content_wrapper -->
       </div> <!-- .large-8 columns -->     
     </div> <!-- .row -->
@@ -91,8 +81,8 @@
   
   <div class="links">
     <div class="row">
-      <div class="large-4 medium-2 columns">
-        <div class="link_container">
+      <div class="large-4 columns">
+        <div class="link_container clearfix">
           <div class="link_heading">
             <h3>To the Moon</h3>
           </div>
@@ -106,7 +96,7 @@
     </div> 
 
       <div class="large-4 columns">
-        <div class="link_container">
+        <div class="link_container clearfix">
           <div class="link_heading">
             <h3>Just Around Earth</h3>
           </div>
@@ -132,14 +122,16 @@
               <h4>$156,000</h4>
             </div>
           </div> <!-- .small_links -->
-          <div class="link_burger_3">
-            <a href="#">More Deals   <img src="/images/arrow.png"></a>
+          <div class="link_deals show-for-large-up">
+            <a href="#">More Deals<img src="/images/arrow.png"></a>
           </div>
         </div> <!-- .link_main -->
       </div> <!-- .large_4 columns -->
     </div>
   </div> <!-- .links -->
-
+ <div class="link_burger_3 hide-for-large-up">
+            <a href="#">More Deals<img src="/images/arrow.png"></a>
+          </div>
   <footer>
     <div class="row">
       <div class="large-12 columns">

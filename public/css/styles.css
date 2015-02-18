@@ -116,7 +116,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem; }
+  max-width: 68.75rem; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -2191,7 +2191,7 @@ meta.foundation-mq-topbar {
     .top-bar.expanded {
       background: #333333; }
   .contain-to-grid .top-bar {
-    max-width: 62.5rem;
+    max-width: 68.75rem;
     margin: 0 auto;
     margin-bottom: 0; }
   .top-bar-section {
@@ -3019,122 +3019,181 @@ h1, h2, h3, h4, a, p {
   color: #333333;
   text-align: center; }
 
-@media only screen and (max-width: 40em) {
-  header .columns {
-    padding: 0; } }
-header nav.top-bar .title-area h1.mobile_logo {
-  background-image: url('/images/logo.svg');
-  background-repeat: no-repeat;
-  background-size: 60px;
-  margin-left: 30px; }
-  header nav.top-bar .title-area h1.mobile_logo a {
-    font-size: 1.5em;
-    color: #9ECBCC;
-    font-weight: 300;
-    text-align: initial; }
-    header nav.top-bar .title-area h1.mobile_logo a span {
-      color: #9ECBCC;
-      font-size: 1em;
-      font-weight: 600;
-      padding-left: 50px; }
-header nav.top-bar .title-area li.toggle-topbar a {
-  background-image: url('/images/menu_icon.png');
-  background-size: 40px;
-  background-repeat: no-repeat;
-  display: block;
-  height: 40px;
-  width: 40px;
-  margin: 12px 15px 0 0; }
-header .top-bar-section {
-  color: #9ECBCC; }
-  header .top-bar-section ul {
-    font-size: 1.5em;
-    font-weight: 300;
-    letter-spacing: 1px;
-    background-color: #333333; }
-    header .top-bar-section ul li {
-      padding: 14px 40px;
-      border-top: solid 1px #9ECBCC; }
-header div.bar {
+header {
   background-color: #9ECBCC;
   background-image: url('/images/header_bg.png');
-  height: 241px; }
+  position: relative; }
+  @media only screen and (max-width: 40em) {
+    header .columns {
+      padding: 0; } }
+  header h1.desktop_logo a span {
+    font-weight: 700; }
+  header h1.desktop_logo img {
+    height: 150px; }
+  header nav.top-bar .title-area h1.mobile_logo {
+    background-image: url('/images/logo.svg');
+    background-repeat: no-repeat;
+    background-size: 60px;
+    margin-left: 30px; }
+    header nav.top-bar .title-area h1.mobile_logo a {
+      font-size: 1.5em;
+      color: #9ECBCC;
+      font-weight: 300;
+      text-align: initial; }
+      header nav.top-bar .title-area h1.mobile_logo a span {
+        color: #9ECBCC;
+        font-size: 1em;
+        font-weight: 600;
+        padding-left: 50px; }
+  header nav.top-bar .title-area li.toggle-topbar a {
+    background-image: url('/images/menu_icon.png');
+    background-size: 40px;
+    background-repeat: no-repeat;
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin: 12px 15px 0 0; }
+  header .top-bar-section {
+    color: #9ECBCC; }
+    header .top-bar-section ul {
+      font-size: 1.5em;
+      font-weight: 300;
+      letter-spacing: 1px;
+      background-color: #333333; }
+      header .top-bar-section ul li {
+        padding: 14px 40px;
+        border-top: solid 1px #9ECBCC; }
   @media only screen and (max-width: 40em) {
     header div.bar {
       display: none; } }
-header h1.desktop_logo {
-  border: solid 5px yellow;
-  background-image: url('/images/logo.svg');
-  background-size: auto 165px;
-  background-repeat: no-repeat;
-  background-position: center -15px;
-  letter-spacing: 1px; }
+  header h1.desktop_logo {
+    margin: 25px 0 25px;
+    padding-top: 120px;
+    background-image: url('/images/logo.svg');
+    background-size: auto 150px;
+    background-repeat: no-repeat;
+    background-position: center -15px;
+    letter-spacing: 1px; }
+
+nav.desktop_nav {
+  width: 100%;
+  background-color: #333333;
+  margin: auto;
+  text-align: center;
+  border-radius: 7px; }
+  @media only screen and (min-width:40.063em) {
+    nav.desktop_nav {
+      margin-bottom: -50px; } }
+  nav.desktop_nav ul {
+    list-style: none;
+    height: 4.0625rem;
+    border-radius: 10px; }
+    nav.desktop_nav ul li {
+      display: inline-block;
+      padding: 0 1.5rem; }
+      nav.desktop_nav ul li a {
+        color: #9ECBCC;
+        letter-spacing: 1px;
+        font-size: 1.1rem;
+        font-weight: 300;
+        line-height: 4.0625rem; }
 
 .main_copy {
-  border: solid 2px purple; }
+  width: 100%;
+  margin-top: -10px;
+  padding-top: 130px;
+  display: block; }
+  @media only screen and (min-width:64.063em) {
+    .main_copy {
+      background-position: 676px -85px;
+      padding-top: 0;
+      float: left;
+      width: 60%; } }
   @media only screen and (max-width: 40em) {
     .main_copy {
-      background-image: url('/images/ship.svg');
-      background-position: center -63px;
-      background-repeat: no-repeat;
-      background-size: 300px;
-      height: auto;
-      width: 100%;
-      margin-top: -25px;
-      padding: 200px 0 40px;
-      display: block; } }
+      padding: 275px 30px 50px; } }
   .main_copy h2 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 300;
     padding: 20px;
-    margin: 40px; }
+    margin: 117px 40px 13px;
+    text-align: center; }
     @media only screen and (max-width: 40em) {
       .main_copy h2 {
         padding: 0;
         margin: 0; } }
+    @media only screen and (min-width:64.063em) {
+      .main_copy h2 {
+        margin: 20px 40px;
+        padding: 40px 0;
+        width: 91%;
+        text-align: left; } }
   .main_copy span {
     font-weight: 600; }
 
 .main_content_wrapper {
-  border: solid 3px blue;
   margin-top: 70px;
   background-color: #9ECBCC;
   border-radius: 8px; }
+  .main_content_wrapper .ship_image {
+    height: 0;
+    margin-top: -73px; }
+    .main_content_wrapper .ship_image img {
+      width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block; }
+    @media only screen and (min-width:64.063em) {
+      .main_content_wrapper .ship_image {
+        margin-right: 45px;
+        float: right;
+        width: 350px;
+        height: 280px; } }
+    @media only screen and (min-width:64.063em) {
+      .main_content_wrapper .ship_image {
+        margin-top: -84px; } }
+
+.main_aside_button {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+  @media only screen and (min-width:64.063em) {
+    .main_aside_button {
+      margin: 0 70px 0 0;
+      float: right;
+      max-width: 250px; } }
+  @media only screen and (min-width:40.063em) {
+    .main_aside_button {
+      max-width: 300px; } }
+  .main_aside_button a {
+    border-bottom: solid 7px #333333;
+    background-color: #666666;
+    height: 70px;
+    padding: 20px;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: auto;
+    margin-bottom: 60px;
+    display: inline-block;
+    width: 100%; }
+    @media only screen and (min-width:64.063em) {
+      .main_aside_button a {
+        margin-bottom: 0;
+        width: 100%; } }
 
 .main_aside {
   border-radius: 15px;
   text-align: center; }
-  .main_aside div.main_aside_image {
-    background-image: url('/images/ship.svg');
-    background-position: center -63px;
-    background-repeat: no-repeat;
-    background-size: 300px;
-    height: 200px;
-    width: 300px;
-    margin-top: -25px;
-    display: none; }
-    @media only screen and (min-width:64.063em) and (max-width:90em) {
-      .main_aside div.main_aside_image {
-        display: initial; } }
-  .main_aside .main_aside_button {
-    border-bottom: solid 7px #333333;
-    background-color: #666666;
-    height: 65px;
-    padding: 20px;
-    width: 75%;
-    margin: auto;
-    margin-bottom: 60px; }
-    .main_aside .main_aside_button a {
-      color: #FFFFFF;
-      font-size: 1.2em;
-      font-weight: 300; }
 
-.links .row {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-  @media only screen and (max-width: 40em) {
-    .links .row {
-      margin: 0; } }
+@media only screen and (min-width:40.063em) and (max-width:64em) {
+  .links {
+    margin: 50px 0 0; } }
+@media only screen and (min-width:64.063em) {
+  .links .row {
+    margin-top: 20px;
+    margin-bottom: 20px; } }
 .links h3, .links h4, .links a, .links p {
   color: #FFFFFF;
   font-weight: 300; }
@@ -3144,54 +3203,116 @@ header h1.desktop_logo {
   @media only screen and (max-width: 40em) {
     .links .link_container {
       margin: 30px 45px; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .links .link_container {
+      margin-bottom: 50px; } }
   .links .link_container:last-child h3 {
     color: #FFFFFF; }
 .links .link_heading {
   border-bottom: solid 1px #555555;
   box-shadow: 0px 1px 1px #777777;
   padding: 20px 0; }
-  @media only screen and (max-width: 40em) {
-    .links .link_heading h3 {
-      font-weight: 600;
-      font-size: 1.5em;
-      letter-spacing: 1px; } }
   @media only screen and (min-width:40.063em) and (max-width:64em) {
-    .links .link_heading h3 {
-      float: right; } }
-@media only screen and (max-width: 40em) {
-  .links .cost {
-    padding: 30px 83px; } }
-.links .cost h4 {
-  font-size: 4.4em;
-  font-weight: 300;
-  border-bottom: solid 10px #FFFFFF;
-  width: 100%;
-  margin: auto; }
+    .links .link_heading {
+      border: none;
+      box-shadow: none;
+      padding: 0; } }
+  .links .link_heading h3 {
+    font-weight: 600;
+    font-size: 1.5em;
+    letter-spacing: 1px; }
+    @media only screen and (min-width:40.063em) and (max-width:64em) {
+      .links .link_heading h3 {
+        padding: 55px 0 0;
+        float: right;
+        width: 50%;
+        text-align: left; } }
+.links .cost {
+  text-align: center; }
+  @media only screen and (min-width:64.063em) {
+    .links .cost {
+      margin: 0;
+      padding: 25px 0;
+      width: 100%; } }
+  @media only screen and (max-width: 40em) {
+    .links .cost {
+      padding: 30px 0;
+      margin: auto; } }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .links .cost {
+      float: left;
+      width: 45%;
+      padding: 40px 48px;
+      border-right: solid 1px #555555;
+      box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.25); } }
+  .links .cost h4 {
+    display: inline;
+    font-size: 4.4em;
+    font-weight: 300;
+    border-bottom: solid 10px #FFFFFF; }
 .links .description {
   font-size: 1em;
   font-weight: 300;
-  width: 58%;
+  width: 50%;
   margin: auto;
   padding: 10px 0; }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .links .description {
+      float: right; } }
+  @media only screen and (min-width:64.063em) {
+    .links .description {
+      width: 90%;
+      padding-bottom: 40px; } }
   .links .description p {
-    letter-spacing: 0.8px; }
-@media only screen and (max-width: 40em) {
-  .links .small_links {
-    display: none; } }
-.links .columns:last-child {
-  background-color: #9ECBCC; }
-.links .link_burger_3 {
+    letter-spacing: 0.8px;
+    margin: auto; }
+    @media only screen and (min-width:40.063em) and (max-width:64em) {
+      .links .description p {
+        text-align: left;
+        padding: 0 50px 0 0; } }
+.links .small_links {
+  display: none; }
+  .links .small_links h3 {
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding-top: 28px;
+    margin: 0; }
+  .links .small_links h4 {
+    font-size: 2.8em;
+    font-weight: 300;
+    border-bottom: solid 1px #555555;
+    box-shadow: 0px 1px 1px #777777;
+    margin: 0;
+    padding-bottom: 17px; }
+  .links .small_links .link_burger_2 {
+    margin: 0; }
+  @media only screen and (min-width:64.063em) {
+    .links .small_links {
+      display: initial; } }
+
+.link_burger_3 {
   text-align: center;
   background-color: #9ECBCC; }
-  .links .link_burger_3 a {
-    font-size: 1.5em;
+  .link_burger_3 a {
+    color: #FFFFFF;
+    font-size: 1.6em;
     font-weight: 600;
-    letter-spacing: 1.5px; }
-  .links .link_burger_3 img {
+    letter-spacing: 1.5px;
+    line-height: 90px; }
+  .link_burger_3 img {
     padding-left: 20px; }
   @media only screen and (max-width: 40em) {
-    .links .link_burger_3 {
+    .link_burger_3 {
       margin: 0; } }
+
+.link_deals {
+  text-align: center;
+  padding: 15px 0; }
+  .link_deals a {
+    font-size: 1.4em;
+    letter-spacing: 1px; }
+    .link_deals a img {
+      padding-left: 15px; }
 
 footer {
   background-color: #333333; }
@@ -3201,5 +3322,7 @@ footer {
     font-size: 0.9em;
     height: 120px;
     padding-top: 30px;
-    width: 58%;
-    margin: auto; }
+    width: 58%; }
+    @media only screen and (min-width:40.063em) {
+      footer p {
+        width: 100%; } }
