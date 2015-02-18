@@ -3183,7 +3183,8 @@ nav.desktop_nav {
     display: inline-block;
     width: 100%; }
     .main_aside_button a:hover {
-      background-color: #333333; }
+      background-color: #333333;
+      transition: all 0.5s ease; }
     @media only screen and (min-width:64.063em) {
       .main_aside_button a {
         margin-bottom: 0;
@@ -3208,11 +3209,14 @@ nav.desktop_nav {
   border-radius: 7px; }
   @media only screen and (min-width:64.063em) {
     .links .link_container.third .link_burger_1:hover, .links .link_container.third .link_burger_2:hover, .links .link_container.third .link_deals:hover {
-      background-color: #333333; }
+      background-color: #333333;
+      transition: all 0.5s ease; }
     .links .link_container.third:hover {
-      background-color: #666666; } }
+      background-color: #666666;
+      transition: all 0.5s ease; } }
   .links .link_container:hover {
-    background-color: #333333; }
+    background-color: #333333;
+    transition: all 0.5s ease; }
   @media only screen and (max-width: 40.063em) {
     .links .link_container {
       margin: 30px 45px; } }

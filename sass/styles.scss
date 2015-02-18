@@ -275,6 +275,7 @@ nav.desktop_nav{
 
       &:hover{
         background-color: $dark_grey;
+        transition: all 0.5s ease;
       }
 
       @media #{$large-up} {
@@ -356,16 +357,19 @@ nav.desktop_nav{
         .link_burger_1, .link_burger_2, .link_deals{
           &:hover{
             background-color: $dark_grey;
+            transition: all 0.5s ease;
           }
         }
         &:hover{
           background-color: $light_grey;
+          transition: all 0.5s ease;
         }
       }
     }
 
     &:hover{
       background-color: $dark_grey;
+      transition: all 0.5s ease;
     }
 
     @media #{$small-only} {
