@@ -103,6 +103,14 @@ header{
       li{
         padding: 14px 40px;
         border-top: solid 1px $light_blue;
+
+        a{
+          font-size: 0.9em;
+          padding: 0;
+          text-align: left;
+          font-weight: 300;
+          color: $light_blue;
+        }
       }
     }
 

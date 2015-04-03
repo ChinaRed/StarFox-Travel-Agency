@@ -3064,6 +3064,12 @@ header {
       header .top-bar-section ul li {
         padding: 14px 40px;
         border-top: solid 1px #9ECBCC; }
+        header .top-bar-section ul li a {
+          font-size: 0.9em;
+          padding: 0;
+          text-align: left;
+          font-weight: 300;
+          color: #9ECBCC; }
   @media only screen and (max-width: 40.063em) {
     header div.bar {
       display: none; } }
